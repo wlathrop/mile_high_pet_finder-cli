@@ -5,7 +5,7 @@ MileHighPetFinder
 MileHighPetFinder helps you find your new best friend by displaying animals that are available for adoption or fostering at the Pikes Peak Region Humane Society in Colorado Springs. 
 
 
-MileHighPetFinder lists available dogs, cats, rabbits, reptiles, and many other animals. You can learn more about the animal right here in the MileHighPetFinder app, or copy/paste the link in your browser to find out how to adopt!
+MileHighPetFinder lists available dogs, cats, rabbits, reptiles, and many other animals that are looking for forever hoems. You can learn more about the animal right here in the MileHighPetFinder app, or copy/paste the link in your browser to find out how to adopt!
 
 All content published by Pikes Peak Region Humane Society is the property of Pikes Peak Region Humane Society and is protected by copyright, trademark, and other intellectual property laws.
 
