@@ -1,8 +1,13 @@
 # MileHighPetFinder::Cli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mile_high_pet_finder/cli`. To experiment with that code, run `bin/console` for an interactive prompt.
+MileHighPetFinder
 
-TODO: Delete this and the text above, and describe your gem
+MileHighPetFinder helps you find your new best friend by displaying animals that are available for adoption or fostering at the Pikes Peak Region Humane Society in Colorado Springs. 
+
+
+MileHighPetFinder lists available dogs, cats, rabbits, reptiles, and many other animals. You can learn more about the animal right here in the MileHighPetFinder app, or copy/paste the link in your browser to find out how to adopt!
+
+All content published by Pikes Peak Region Humane Society is the property of Pikes Peak Region Humane Society and is protected by copyright, trademark, and other intellectual property laws.
 
 ## Installation
 
