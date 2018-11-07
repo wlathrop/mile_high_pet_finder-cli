@@ -27,7 +27,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Type MileHighPetFinder in the command line.
 
 ## Development
 
