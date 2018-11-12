@@ -27,4 +27,27 @@ class CLI
     display_all_animals
   end
   
-  
+   def display_all_animals
+    if @animal_object == Dogs
+      puts "\n\nAVAILABLE DOGS FOR ADOPTION:".light_blue
+    else
+      puts "\n\nAVAILABLE #{@animal_object.to_s.upcase} FOR ADOPTION:".light_blue
+    end
+    puts "Name - Breed - Age".cyan
+    puts "-----------------------------"
+
+    all_pets = @animal_object.all
+    all_pets.each.with_index(1) {|pet, num| puts "#{num}. #{pet.name} - #{pet.breed} - #{pet.age}"}
+
+    puts "\nWhich pet would you like more information on? (Please enter a number)".cyan
+
+    animal_number = number_to_index(gets.chomp)
+
+    if animal_number < 0 || animal_number >= all_pets.size
+      puts "I'm sorry, that was an incorrect entry. Please try again.".red
+      display_all_animals
+    end
+
+    PetGenerator.add_attributes_to_animals(animal_number, @animal_object)
+    display_details(animal_number)
+  end
