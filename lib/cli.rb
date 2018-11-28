@@ -75,3 +75,24 @@ class CLI
     puts "2. Yes, take me back to the main menu."
     puts "3. No, I'm done.\n\n"
     user_input = gets.chomp
+    
+     if user_input == "1"
+      display_all_animals
+    elsif user_input == "2"
+      start
+    elsif user_input == "3"
+      exit
+    else
+      puts "I'm sorry, I didn't understand that answer.".red
+      repeat?
+    end
+  end
+
+  def number_to_index(user_input)
+    user_input.to_i - 1
+  end
+
+  def define_animal_object(user_input)
+    Object.const_get("#{PETS[user_input]}")
+  end
+end
