@@ -51,3 +51,27 @@ class CLI
     PetGenerator.add_attributes_to_animals(animal_number, @animal_object)
     display_details(animal_number)
   end
+  
+    def display_details(num)
+      pet = @animal_object.all[num]
+      if pet.species == "Dogs"
+        puts "\n#{pet.name.upcase} - Dogs".light_blue
+      else
+        puts "\n#{pet.name.upcase} - #{pet.species.capitalize}".light_blue
+      end
+      puts "------------------------------".cyan
+      puts "Breed:".green + " #{pet.breed}"
+      puts "Age:".green + " #{pet.age}"
+      puts "Gender:".green  + " #{pet.gender}\n\n"
+      puts "#{pet.description}\n\n"
+      puts "For more info on how to adopt #{pet.name}, visit https://www.hsppr.org/springs #{pet.url}"
+
+      repeat?
+  end
+
+  def repeat?
+    puts "\n\nWould you like to search more adoptable pets? (Please enter a number)\n".cyan
+    puts "1. Yes, take me back to the list of available #{@animal_object.to_s.downcase}."
+    puts "2. Yes, take me back to the main menu."
+    puts "3. No, I'm done.\n\n"
+    user_input = gets.chomp
